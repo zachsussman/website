@@ -1,13 +1,16 @@
 import L from 'leaflet';
+import './leaflet.css';
 
-let initMap = function () {
-    let map = L.map('mdtmap', {scrollWheelZoom: true}).setView([25.758464, -80.255186], 11);
+let initMap = function (zoom) {
+    let map = L.map('mdtmap', {scrollWheelZoom: zoom}).setView([25.758464, -80.255186], 11);
+
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
         maxZoom: 18,
         id: 'mapbox.streets',
         accessToken: 'pk.eyJ1Ijoiam1zZnJ1aXRpc29uIiwiYSI6ImNqNXZ1cmt3dDA1eHgzMmxlMmdmcWwxcW8ifQ.1HQR26PenLL2SKVEvb0rTw'
     }).addTo(map);
+
     L.polyline([[25.846146, -80.234006],[25.846216, -80.231849],[25.846291, -80.229129],[25.846331, -80.227336],[25.846424, -80.224682],[25.846476, -80.223133],[25.846529, -80.221481],[25.846602, -80.219035],[25.846676, -80.216277],[25.846775, -80.214297],[25.846858, -80.212239],[25.846910, -80.210973],[25.846948, -80.208569],[25.847092, -80.205145],[25.847160, -80.203189],[25.847213, -80.201483],[25.847246, -80.199923],[25.847375, -80.196125]], {color: 'red', weight: 5}).addTo(map).bindTooltip('112', {interactive: true, sticky: true});
 
     L.polyline([[25.770545, -80.305414],[25.770446, -80.307976],[25.770389, -80.310995]], {color: 'red', weight: 5}).addTo(map).bindTooltip('7, 11, 73', {interactive: true, sticky: true});

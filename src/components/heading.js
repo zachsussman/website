@@ -1,10 +1,10 @@
 import React from 'react'
 import './heading.css'
 
-const Heading = ({title}) => (
+const Heading = ({title, children}) => (
     <div class="heading">
         <div class="heading-separator"/>
-        <div class="heading-content">{title}</div>
+        <div class="heading-content">{title}</div>{children}
         <div class="heading-separator"/>
     </div>
 )

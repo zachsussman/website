@@ -1,0 +1,35 @@
+.projectbox {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.projectbox-image {
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #fff;
+    /* border-style: solid;
+    border-color: #bbbbbb;
+    border-width: 1px; */
+}
+
+.projectbox-image-filler {
+    width: 100px;
+    height: 100px;
+}
+
+.projectbox-left {
+    flex: 0;
+    margin-right: 30px;
+}
+
+.projectbox-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}

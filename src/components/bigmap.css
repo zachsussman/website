@@ -1,0 +1,24 @@
+.bigmap-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bigmap-back {
+    align-self: flex-start;
+}
+
+.bigmap-heading {
+    display: block;
+    font-weight: bold;
+    font-size: 22pt;
+    margin-top: 20px;
+}
+
+.big-map {
+    margin-top: 40px;
+    width: 75%;
+    height: 600px;
+    margin-bottom: 40px;
+}
