@@ -1,0 +1,32 @@
+.contentbox {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.contentbox-image {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #7b7b7b;
+    border-width: 1px;
+}
+
+.contentbox-image-filler {
+    width: 50px;
+    height: 50px;
+}
+
+.contentbox-left {
+    flex: 0;
+    margin-right: 30px;
+}
+
+.contentbox-right {
+    flex: 1;
+}
