@@ -6,7 +6,7 @@ const ContentBox = ({src, backgroundColor, children}) => (
         <div className="contentbox-left">
         {
         src ? 
-        <img className="contentbox-image" style={backgroundColor ? {backgroundColor} : {}} src={src} /> :
+        <img className="contentbox-image" style={backgroundColor ? {backgroundColor} : {}} src={src} alt=""/> :
         <div className="contentbox-image-filler" />
         }
         </div>

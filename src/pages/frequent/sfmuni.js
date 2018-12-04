@@ -1,7 +1,7 @@
 import React from 'react';
 
 import BigMap from '../../components/bigmap';
-import sfmuniInit from '../scripts/sfmuni.js';
+import sfmuniInit from '../../scripts/sfmuni.js';
 
 let SfMuni = () => (
     <BigMap callback={sfmuniInit} id="sfmunimap">

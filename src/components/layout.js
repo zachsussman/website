@@ -5,18 +5,18 @@ import { Link, withPrefix } from "gatsby"
 import './layout.css'
 
 const Layout = ({ active, children }) => {
-  let link_directory = {"About Me": '/', 'Frequent Transit': '/frequent/'};
+  let link_directory = {"About Me": '/about/', 'Projects': '/'};
 
   let links = [];
   for (let link_name in link_directory) {
     links.push(
-      <div className="nav-link-item">      
-        <Link key={link_name} to={link_directory[link_name]} className={active === link_name ? 'nav-link-active' : 'nav-link'}>{link_name}</Link>
+      <div className="nav-link-item" key={link_name}>      
+        <Link to={link_directory[link_name]} className={active === link_name ? 'nav-link-active' : 'nav-link'}>{link_name}</Link>
       </div>
     );
   }
   links.push(
-    <div className="nav-link-item">
+    <div className="nav-link-item" key="resume">
       <a href={withPrefix("pdf/resume.pdf")} className="nav-link">Resume</a>
     </div>
   )
@@ -25,7 +25,7 @@ const Layout = ({ active, children }) => {
   return (
   <div className="container">
     <div className="nav">
-        <Link to="/" className="nav-name">Zach Sussman</Link>
+        <div className="nav-name">Zach Sussman</div>
       <div className="nav-links">
         {links}
       </div>

@@ -1,0 +1,16 @@
+.project-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-footer-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3px; 
+}
+
+.project-footer-text {
+  margin-left: 10px;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import BigMap from '../../components/bigmap';
-import mdtInit from '../scripts/mdt.js';
+import mdtInit from '../../scripts/mdt.js';
 
 let Miami = () => (
     <BigMap callback={mdtInit} id="mdtmap">

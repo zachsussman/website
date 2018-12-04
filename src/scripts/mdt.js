@@ -1,7 +1,13 @@
-import L from 'leaflet';
 import './leaflet.css';
 
+if (typeof window !== 'undefined') {
+    var L = require('leaflet');
+}
+
+
 let initMap = function (zoom) {
+    if (!L) return;
+
     let map = L.map('mdtmap', {scrollWheelZoom: zoom}).setView([25.758464, -80.255186], 11);
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {

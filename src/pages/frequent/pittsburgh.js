@@ -1,7 +1,7 @@
 import React from 'react';
 
 import BigMap from '../../components/bigmap';
-import paacInit from '../scripts/paac.js';
+import paacInit from '../../scripts/paac.js';
 
 let Pittsburgh = () => (
     <BigMap callback={paacInit} id="paacmap">

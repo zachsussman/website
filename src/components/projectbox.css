@@ -26,10 +26,24 @@
 .projectbox-left {
     flex: 0;
     margin-right: 30px;
+    margin-top: 5px;
 }
 
 .projectbox-right {
     display: flex;
     flex: 1;
     flex-direction: column;
+    margin-top: 0px;
+}
+
+.projectbox-right h3 {
+    margin-top: 0px;
+}
+
+.projectbox-more {
+    font-weight: normal;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

@@ -1,16 +1,15 @@
 import React from 'react';
-import {withPrefix} from 'gatsby';
 
 import Layout from '../components/layout';
-import Heading from '../components/heading';
+import ProjectHeader from '../components/project-header';
+
+import ProjectFooter from '../components/project-footer';
 
 import './index.css';
 
 const InSight = () => (
     <Layout active="In-Sight">
-        <h1 style={{textAlign: "center"}}>In-Sight: Tension-Based Haptic Feedback to Improve Navigation for Blind People</h1>
-        <div className="mainContent">
-            <Heading><h3>Abstract</h3></Heading>
+        <ProjectHeader name="In-Sight: Tension-Based Haptic Feedback to Improve Navigation for Blind People" />
             <p>Globally, 1.3 billion people live with some form of vision impairment, and 36 million people are blind. For years, the main device used by blind people for navigation has been the traditional white cane, used to detect floor level changes and obstacles and also signaling that its user is blind. However, this trusted method of navigation has its own issues, most notably that it requires contact with obstacles to detect them.
             </p>
             <p>
@@ -19,14 +18,11 @@ The predominant mode of haptic feedback for people who are blind is vibration. W
             <p>
 The initial prototype of In-Sight, which was tested on a small sample of sighted individuals, successfully enabled user navigation in a constrained environment using tension applied to three strings, converting a LIDAR generated point cloud into a tactile map. This area of research has compelling motivation as it provides a similar perceptual response to the white cane, while extending user depth and removing the need to physically interface with obstacles. Our proposal is to improve the In-Sight system and run a series of user studies to determine the performance of the system as a navigational aid.
             </p>
-        </div>
 
-        <div className="mainContent" style={{marginBottom: 40}}>
-            <Heading><h3>Documents</h3></Heading>
-            <ul>
-                <li><a href={withPrefix('insight/proposal.pdf')}>Project Proposal</a></li>
-            </ul>
-        </div>
+            <ProjectFooter 
+                documents={{"Project Proposal": "/insight/proposal.pdf"}} 
+                time="January 2018 - Now" 
+                people="Alex Baikovitz, Jonathan Duffy, Jonathan Burns" />
     </Layout>
 )
 
