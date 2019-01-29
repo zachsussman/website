@@ -20,9 +20,10 @@ The initial prototype of In-Sight, which was tested on a small sample of sighted
             </p>
 
             <ProjectFooter 
-                documents={{"Project Proposal": "/insight/proposal.pdf"}} 
+                documents={{"Project Proposal": "/insight/proposal.pdf",
+            "Milestone, December 2018": "/insight/milestone-12-18.pdf"}} 
                 time="January 2018 - Now" 
-                people="Alex Baikovitz, Jonathan Duffy, Jonathan Burns" />
+                people="Henny Admoni, Alex Baikovitz, Jonathan Duffy, Benjamin Newman, Jonathan Burns" />
     </Layout>
 )
 

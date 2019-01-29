@@ -15,7 +15,7 @@ let ProjectFooter = ({links, time, people, documents}) => {
       elems.push(
         <div className="project-footer-box" key={title}>
           <LinkIcon />
-          <span className="project-footer-text"><a href={links[title]}>{title}</a></span>
+          <span className="project-footer-text"><a href={links[title]} target="blank">{title}</a></span>
         </div>
       );
     }
@@ -26,7 +26,7 @@ let ProjectFooter = ({links, time, people, documents}) => {
       elems.push(
         <div className="project-footer-box" key={title}>
           <DocumentIcon />
-          <span className="project-footer-text"><a href={documents[title]}>{title}</a></span>
+          <span className="project-footer-text"><a href={documents[title]} target="blank">{title}</a></span>
         </div>
       )
     }

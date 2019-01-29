@@ -17,7 +17,7 @@ const Layout = ({ active, children }) => {
   }
   links.push(
     <div className="nav-link-item" key="resume">
-      <a href={withPrefix("pdf/resume.pdf")} className="nav-link">Resume</a>
+      <a href={withPrefix("pdf/resume.pdf")} className="nav-link" target="blank">Resume</a>
     </div>
   )
 
